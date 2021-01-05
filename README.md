@@ -61,8 +61,8 @@ com.antiamazon.vendeur1
 
  | Model | Repository | WebController |
  |-----------|----------|
- | Vendeur | VendeurRepository | VendeurController
- | Posseder (TI* entre Vendeur et Article) | PossederRepository | / | 
+ | Vendeur | VendeurRepository | VendeurController  |
+ | Posseder (TI* entre Vendeur et Article) | PossederRepository | / |
  | Article  | / | ArticleController | ArticleController | 
  | Avoir (TI* entre Vendeur et Adresse) |  AvoirRepository | / | 
  | Adresse | AdresseRepository | AdresseController |
