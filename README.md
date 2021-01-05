@@ -63,7 +63,7 @@ com.antiamazon.vendeur1
  |-----------|----------|
  | Vendeur | VendeurRepository | VendeurController  |
  | Posseder (TI* entre Vendeur et Article) | PossederRepository | / |
- | Article  | / | ArticleController | ArticleController | 
+ | Article  | ArticleController | ArticleController | 
  | Avoir (TI* entre Vendeur et Adresse) |  AvoirRepository | / | 
  | Adresse | AdresseRepository | AdresseController |
  | Preferer (TI* entre Vendeur et Paiement) | PrefererRepository | / |
