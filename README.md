@@ -69,4 +69,9 @@ com.antiamazon.vendeur1
  | Preferer (TI* entre Vendeur et Paiement) | PrefererRepository | / |
  | Paiement | PaiementRepository | PaiementController |
 
-_TI* = Table Intermédiair_
+_TI* = Table Intermédiaire_
+
+
+## MCD 
+
+![MCD](https://github.com/singard/microVendeur/blob/main/mcd.png)
