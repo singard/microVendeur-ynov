@@ -24,11 +24,11 @@ com.antiamazon.vendeur1
  | features_adresse | requête des adresses |
  | features_paiement | requête des paiements |
  
-##Pour toutes les features
+##  Pour toutes les features
 
 <li> Créer les classes Model / Repository / WebController </li>
 
-##Features_vendeur
+## Features_vendeur
 
 <li>ajouter / modifier nom de société</li>
 <li>ajouter / modifier description</li>
