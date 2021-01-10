@@ -16,6 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+@CrossOrigin
 @RestController
 public class HomeController {
 
@@ -33,7 +34,6 @@ public class HomeController {
     	return newVendeur.toString();
     }*/
 
-    @CrossOrigin(origins = "https://guarded-badlands-84396.herokuapp.com")
     @PostMapping(value = "/fill", consumes = "application/json")
     public ResponseEntity register(@RequestBody FillVendeurModel model) {
 
