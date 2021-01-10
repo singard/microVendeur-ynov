@@ -37,6 +37,7 @@ public class HomeController {
     	return newVendeur.toString();
     }*/
 
+    @CrossOrigin(origins = "https://guarded-badlands-84396.herokuapp.com")
     @PostMapping(value = "/fill", consumes = "application/json")
     public ResponseEntity register(@RequestBody FillVendeurModel model) {
 
