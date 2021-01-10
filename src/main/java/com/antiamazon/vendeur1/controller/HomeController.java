@@ -6,14 +6,10 @@ import com.antiamazon.vendeur1.entity.Paiement;
 import com.antiamazon.vendeur1.model.FillVendeurModel;
 import com.antiamazon.vendeur1.repository.VendeurRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMessage;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.antiamazon.vendeur1.Table.NewVendeur;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.Collections;
