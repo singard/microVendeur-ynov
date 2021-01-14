@@ -51,7 +51,7 @@ public class ArticleController {
     }
 
     @PutMapping(value = "/article/ajoutStock/{id}" , consumes = "application/json")
-    public  ResponseEntity updateArticleStock(@PathVariable int stockAdd, @PathVariable int id) {
+    public ResponseEntity updateArticleStock(@PathVariable int stockAdd, @PathVariable int id) {
 
         Article article = articleRepository.findById(id);
         article.setQuantite_dispo(article.getQuantite_dispo() + stockAdd);
