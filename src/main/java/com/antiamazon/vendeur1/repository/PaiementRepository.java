@@ -6,5 +6,10 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PaiementRepository extends JpaRepository<Paiement, Integer> {
+    <S extends Paiement> S save (S s);
 
+    List<Paiement> findAll();
+    Optional<Paiement> findById(Integer id);
+
+    void deleteById(Integer integer);
 }
