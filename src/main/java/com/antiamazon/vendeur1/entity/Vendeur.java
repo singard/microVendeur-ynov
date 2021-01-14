@@ -21,6 +21,8 @@ public class Vendeur {
     private byte[] photo;
     @OneToMany(mappedBy = "vendeur")
     private List<Paiement> paiements = new ArrayList<>();
+    @OneToMany(mappedBy = "vendeur")
+    private List<Article> articles = new ArrayList<>();
 
     public Vendeur(){
 
