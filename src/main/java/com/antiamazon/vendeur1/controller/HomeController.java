@@ -16,7 +16,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin
+@Api( description="API pour les opérations CRUD Vendeur")
+@CrossOrigin(origins = "https://guarded-badlands-84396.herokuapp.com")
 @RestController
 public class HomeController {
 
