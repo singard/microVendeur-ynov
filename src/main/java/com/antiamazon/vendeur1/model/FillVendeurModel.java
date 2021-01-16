@@ -9,10 +9,13 @@ public class FillVendeurModel {
     private String rue;
     private String ville;
     private int cp;
+    @Nullable
     private String paiementCB;
+    @Nullable
     private String paiementPaypal;
     @Nullable
     private String paiementCheque;
+    @Nullable
     private String photo64;
 
     public String getSoc() {
@@ -55,6 +58,7 @@ public class FillVendeurModel {
         this.cp = cp;
     }
 
+    @Nullable
     public String getPaiementCB() {
         return paiementCB;
     }
@@ -63,6 +67,7 @@ public class FillVendeurModel {
         this.paiementCB = paiementCB;
     }
 
+    @Nullable
     public String getPaiementPaypal() {
         return paiementPaypal;
     }
@@ -80,6 +85,7 @@ public class FillVendeurModel {
         this.paiementCheque = paiementCheque;
     }
 
+    @Nullable
     public String getPhoto64() {
         return photo64;
     }

@@ -6,9 +6,9 @@ import javax.persistence.*;
 public class Paiement {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name="vendeur_id", nullable=false)
     private Vendeur vendeur;
     private String libelle;
@@ -35,5 +35,13 @@ public class Paiement {
 
     public void setLibelle(String libelle) {
         this.libelle = libelle;
+    }
+
+    public int getVendeur() {
+        return vendeur.getId();
+    }
+
+    public void setVendeur(Vendeur vendeur) {
+        this.vendeur = vendeur;
     }
 }

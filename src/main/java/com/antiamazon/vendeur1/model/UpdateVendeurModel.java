@@ -4,40 +4,59 @@ import com.antiamazon.vendeur1.entity.Adresse;
 
 public class UpdateVendeurModel {
 
-    private Adresse adresse;
-    private String nom_societe;
-    private String description;
-    private byte[] photo;
+    private String soc;
+    private String desc;
+    private String rue;
+    private String ville;
+    private int cp;
+    private String photo64;
 
-    public Adresse getAdresse() {
-        return adresse;
+
+    public String getSoc() {
+        return soc;
     }
 
-    public void setAdresse(Adresse adresse) {
-        this.adresse = adresse;
+    public void setSoc(String soc) {
+        this.soc = soc;
     }
 
-    public String getNom_societe() {
-        return nom_societe;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setNom_societe(String nom_societe) {
-        this.nom_societe = nom_societe;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-    public String getDescription() {
-        return description;
+    public String getRue() {
+        return rue;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setRue(String rue) {
+        this.rue = rue;
     }
 
-    public byte[] getPhoto() {
-        return photo;
+    public String getVille() {
+        return ville;
     }
 
-    public void setPhoto(byte[] photo) {
-        this.photo = photo;
+    public void setVille(String ville) {
+        this.ville = ville;
+    }
+
+    public int getCp() {
+        return cp;
+    }
+
+    public void setCp(int cp) {
+        this.cp = cp;
+    }
+
+    public String getPhoto64() {
+        return photo64;
+    }
+
+    public void setPhoto64(String photo64) {
+        this.photo64 = photo64;
     }
 }

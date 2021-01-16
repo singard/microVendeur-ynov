@@ -6,12 +6,12 @@ import javax.persistence.*;
 public class Adresse {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
     private String rue;
     private String ville;
     private int code_postal;
-    @OneToOne(mappedBy = "adresse")
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "adresse")
     private Vendeur vendeur;
 
     public Adresse(){
