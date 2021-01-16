@@ -1,5 +1,7 @@
 # microVendeur
-com.antiamazon.vendeur1
+## com.antiamazon.vendeur1
+Le RequestBody ne pose pas de problème. Il faut juste renvoyer un object JSON à la requête en formattant les données
+du formolaire sous ce format comme dans l'exemple data.
 
 ## Membres et leurs roles :
 

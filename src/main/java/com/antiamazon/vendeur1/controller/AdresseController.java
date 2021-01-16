@@ -20,7 +20,7 @@ public class AdresseController {
     VendeurRepository vendeurRepository;
 
     // Récupere l'adresse d'un vendeur par l'id du vendeur
-    @GetMapping(value = "/adresse/vendeur/show/{vendeurId}")
+    @GetMapping(value = "/adresse/vendeur/show/{vendeurId}", produces = "application/json")
     public ResponseEntity getAdresseVendeur(@PathVariable int vendeurId){
         Vendeur vendeur = vendeurRepository.findVendeurById(vendeurId);
         if(vendeur == null){
@@ -32,7 +32,7 @@ public class AdresseController {
     }
 
     // Récupere l'adresse par son id
-    @GetMapping(value = "/adresse/show/{adresseId}")
+    @GetMapping(value = "/adresse/show/{adresseId}", produces = "application/json")
     public ResponseEntity show(@PathVariable int adresseId){
         Adresse adresse = adresseRepository.findAdresseById(adresseId);
 
@@ -80,7 +80,7 @@ public class AdresseController {
     }*/
 
     // Modifier une adresse par son id
-    @PutMapping(value = "/adresse/update/{adresseId}")
+    @PutMapping(value = "/adresse/update/{adresseId}", consumes = {"application/json", "application/x-www-form-urlencoded"})
     public ResponseEntity updateAdresse(@PathVariable int adresseId, @RequestBody NewAdresseModel model){
 
         Adresse adresse = adresseRepository.findAdresseById(adresseId);
@@ -105,7 +105,7 @@ public class AdresseController {
     }
 
     // Modifier une adresse par l'id du vendeur
-    @PutMapping(value = "/adresse/vendeur/update/{vendeurId}")
+    @PutMapping(value = "/adresse/vendeur/update/{vendeurId}", consumes = {"application/json", "application/x-www-form-urlencoded"})
     public ResponseEntity updateAdresseVendeur(@PathVariable int vendeurId, @RequestBody NewAdresseModel model){
 
         Adresse adresse = adresseRepository.findAdresseByVendeurId(vendeurId);

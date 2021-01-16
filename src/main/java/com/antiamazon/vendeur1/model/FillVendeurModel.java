@@ -63,7 +63,7 @@ public class FillVendeurModel {
         return paiementCB;
     }
 
-    public void setPaiementCB(String paiementCB) {
+    public void setPaiementCB(@Nullable String paiementCB) {
         this.paiementCB = paiementCB;
     }
 
@@ -72,7 +72,7 @@ public class FillVendeurModel {
         return paiementPaypal;
     }
 
-    public void setPaiementPaypal(String paiementPaypal) {
+    public void setPaiementPaypal(@Nullable String paiementPaypal) {
         this.paiementPaypal = paiementPaypal;
     }
 
@@ -90,7 +90,7 @@ public class FillVendeurModel {
         return photo64;
     }
 
-    public void setPhoto64(String photo64) {
+    public void setPhoto64(@Nullable String photo64) {
         this.photo64 = photo64;
     }
 }

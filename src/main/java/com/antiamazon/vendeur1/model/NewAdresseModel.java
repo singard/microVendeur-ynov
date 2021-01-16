@@ -11,6 +11,7 @@ public class NewAdresseModel {
     @Nullable
     private int cp;
 
+    @Nullable
     public String getRue() {
         return rue;
     }
@@ -19,6 +20,7 @@ public class NewAdresseModel {
         this.rue = rue;
     }
 
+    @Nullable
     public String getVille() {
         return ville;
     }
@@ -27,6 +29,7 @@ public class NewAdresseModel {
         this.ville = ville;
     }
 
+    @Nullable
     public int getCp() {
         return cp;
     }
