@@ -25,7 +25,7 @@ public class PaiementController {
 
     // Methode pour ajouter ou modifier les paiements preferes
     // d'un vendeur
-    @PostMapping(value="/paiements/{vendeurId}")
+    @PostMapping(value="/paiements/{vendeurId}", consumes = {"application/json", "application/x-www-form-urlencoded"})
     public ResponseEntity createPaiements(@PathVariable int vendeurId, @RequestBody NewPaiementModel model) {
         Vendeur vendeur = vendeurRepository.findVendeurById(vendeurId);
 
