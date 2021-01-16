@@ -1,8 +1,11 @@
 package com.antiamazon.vendeur1.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Adresse {
 
     @Id
@@ -56,8 +59,8 @@ public class Adresse {
         this.code_postal = code_postal;
     }
 
-    public Vendeur getVendeur() {
-        return vendeur;
+    public int getVendeur() {
+        return vendeur.getId();
     }
 
     public void setVendeur(Vendeur vendeur) {
